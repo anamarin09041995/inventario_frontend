@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { NavService } from './services/_index';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'app';
+
+  constructor(public nav: NavService) { }
+
 }
